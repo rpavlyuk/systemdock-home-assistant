@@ -1,0 +1,19 @@
+container: homeassistant/home-assistant:latest
+created: 2019-08-09 20:53:53.501852
+name: home-assistant
+ports:
+volumes:
+        /sys/fs/cgroup:
+                bind: /sys/fs/cgroup
+                mode: ro
+        /etc/home-assistant/config:
+                bind: /config
+                mode: rw
+        /etc/localtime:
+                bind: /etc/localtime
+                mode: ro
+privileged: false
+tty: false
+working_dir: /root
+environment: {}
+network_mode: host
