@@ -1,11 +1,8 @@
 container: homeassistant/home-assistant:latest
 created: 2019-08-09 20:53:53.501852
 name: home-assistant
-ports:
+ports: {}
 volumes:
-        /sys/fs/cgroup:
-                bind: /sys/fs/cgroup
-                mode: ro
         /etc/home-assistant/config:
                 bind: /config
                 mode: rw
@@ -14,6 +11,6 @@ volumes:
                 mode: ro
 privileged: false
 tty: false
-working_dir: /root
 environment: {}
 network_mode: host
+working_dir: /usr/src/app
