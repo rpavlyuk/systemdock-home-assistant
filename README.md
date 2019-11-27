@@ -1,5 +1,2 @@
-= SystemDock profile for Svarog CI container
+# SystemDock profile for Home Assistant container
 
-Profile to run Svarog CI container as systemd service using SystemDock (https://github.com/rpavlyuk/systemdock)
-
-WORK IN PROGRESS
