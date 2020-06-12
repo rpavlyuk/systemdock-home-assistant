@@ -9,8 +9,8 @@ Restart=no
 RestartSec=60s
 Type=simple
 NotifyAccess=all
-ExecStart=-/usr/bin/systemdock -v -a start -n home-assistant
-ExecStop=/usr/bin/systemdock -v -a stop -n home-assistant
+ExecStart=-/usr/bin/systemdock -a start -n home-assistant
+ExecStop=/usr/bin/systemdock -a stop -n home-assistant
 
 [Install]
 WantedBy=multi-user.target

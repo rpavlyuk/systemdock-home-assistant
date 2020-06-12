@@ -1,7 +1,11 @@
-container: homeassistant/home-assistant:latest
+container: homeassistant/home-assistant:dev
 created: 2019-08-09 20:53:53.501852
 name: home-assistant
-ports: {}
+ports:
+        8123/tcp: 8123
+        8300/tcp: 8300
+        8555/tcp: 8555
+        51827/tcp: 51827
 volumes:
         /etc/home-assistant/config:
                 bind: /config
@@ -12,5 +16,5 @@ volumes:
 privileged: false
 tty: false
 environment: {}
-network_mode: host
+network_mode: bridge
 working_dir: /usr/src/app
