@@ -4,7 +4,6 @@ After=docker.service
 Requires=docker.service
 
 [Service]
-TimeoutStartSec=0
 Restart=no
 RestartSec=60s
 Type=simple
